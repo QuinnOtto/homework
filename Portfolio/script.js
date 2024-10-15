@@ -88,9 +88,26 @@ document.addEventListener("DOMContentLoaded", function() {
         item.addEventListener('mouseenter', () => {
             borderBottom.style.width = '100%';
         });
-
         item.addEventListener('mouseleave', () => {
             borderBottom.style.width = '0';
         });
     });
+    document.getElementById("email").addEventListener("click", function() {
+        const email = "info@quinnotto.nl";
+        navigator.clipboard.writeText(email).then(() => {
+          alert("Email copied to clipboard!");
+        })
+      });
+      document.getElementById("phone").addEventListener("click", function() {
+        const phone = "+31 6 14466292";
+        navigator.clipboard.writeText(phone).then(() => {
+          alert("phone copied to clipboard!");
+        })
+      });
+      document.getElementById("github").addEventListener("click", function() {
+        const github = "https://github.com/QuinnOtto/";
+        navigator.clipboard.writeText(github).then(() => {
+          alert("Github copied to clipbord");
+        })
+      });
 });

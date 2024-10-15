@@ -207,7 +207,6 @@ footer {
 .footer_contact {
   margin-top: 10%;
   margin-left: 3%;
-  font-size: 4rem;
 }
 #footer_title {
   margin-top: 10%;
@@ -221,12 +220,15 @@ footer {
 }
 #footer_copyright {
   margin-left: 3%;
-  margin-top: 10%;
+  margin-top: 25%;
   font-weight: bolder;
   font-size: 1.5rem;
 }
-.footer_contact_info{
+#email, #phone, #github {
+  display: inline;
+  padding: 14px 16px;
+  background-color: rgba(0, 0, 0, 0.250);
+  border-radius: 25px;
   margin-top: 10%;
   margin-left: 3%;
-  font-size: 2rem;
 }
