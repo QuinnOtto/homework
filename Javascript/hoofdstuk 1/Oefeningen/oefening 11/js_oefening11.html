@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Js oefening 11</title>
+    <script>
+function controleer() {
+    let waarde = document.getElementById("invoer").value;
+    if (isNaN(waarde)) {
+        document.getElementById("uitvoer").innerHTML = "Geen Getal: " + waarde;
+    } else {
+        document.getElementById("uitvoer").innerHTML = "Getal: " + waarde;
+    }
+}
+//  check of iets een getal is of niet en geef dit weer in de uitvoer div.
+        
+    </script>
+</head>
+<body>
+    Naam: <input type="text" id="invoer"/><br/><br/>
+    <button id="knop" onclick="controleer()">KLIK</button><br/><br/>
+    <div id="uitvoer"></div>
+ <!-- een button koppelen aan een js function -->
+<!-- een input veld koppelen aan een js function -->
+ <!-- een div koppelen aan een js function -->
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+*{
+    font-family: Verdana;
+    font-weight: bolder;
+}
+
+body {
+    margin: 0;
+}
+
+.alles {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    border: 2px solid black;
+}
+.iets {
+    border-bottom: 2px solid black;
+    padding: 14px 16px;
+}
+#totaal2 {
+    border-top: 2px solid black;
+    padding: 14px 16px;
+}
+button {
+    padding: 14px 16px;
+    width: 100%;
+}

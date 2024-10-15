@@ -1,0 +1,232 @@
+* {
+  font-family: Verdana;
+}
+html {
+  scroll-behavior: auto !important;
+}
+body {
+  background-color: #012A4A;
+  margin: 0;
+  padding: 0;
+  height: 2000px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.header_container {
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 100;
+}
+#nav_bar_img {
+  width: 50px;
+  height: 50px;
+  transition: background-color 0.6s ease-in-out;
+  border-radius: 100px;
+}
+.nav_bar_container {
+  position: relative;
+  margin-right: 1%;
+  overflow: visible;
+  z-index: 6;
+  background-color: rgba(0, 0, 0, 0.250);
+  border-radius: 25px;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+.hover-bg {
+  position: absolute;
+  background-color: white;
+  height: 40px;
+  border-radius: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s ease;
+  z-index: 0;
+  pointer-events: none;
+}
+.nav_bar_container a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  z-index: 6;
+  padding: 15px 10px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+.nav_bar_container a:hover {
+  color: black;
+}
+.center_titel {
+  color: white;
+  padding: 14px 16px;
+  font-size: 3rem;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+#center_titel_h1 {
+  margin: 0;
+}
+#center_about_h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.center_container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #012A4A;
+  z-index: -1;
+}
+.grid {
+  width: 50%;
+}
+.center_project_list {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 3%;
+  margin-top: 3%;
+  margin-right: 3%;
+}
+#center_project_titel {
+  font-weight: lighter;
+}
+.center_project_list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.center_project_list ul li {
+  text-decoration: none;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid gray;
+  transition: 0.3s ease-in-out;
+}
+.center_project_list ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.project_container {
+  margin-top: calc(100vh + 100px);
+  top: 0;
+  z-index: 2;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+#project_1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #013A63 ;
+  color: rgb(0, 0, 0);
+  padding: 3%;
+  height: 200vh;
+}
+.project_1_main {
+  display: flex;
+  margin-top: 4%;
+}
+.project_1_main_h1 {
+  font-size: 3rem;
+  margin-top: 5%;
+  color: white;
+  font-family: Arial;
+}
+#project_2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #01497C ;
+  color: rgb(0, 0, 0);
+  padding: 3%;
+  height: 200vh;
+}
+#project_3 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #014F86;
+  color: rgb(0, 0, 0);
+  padding: 3%;
+  height: 200vh;
+}
+#project_4 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #2A6F97;
+  color: rgb(0, 0, 0);
+  padding: 3%;
+  height: 200vh;
+}
+#project_5 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #2C7DA0;
+  color: rgb(0, 0, 0);
+  padding: 3%;
+  height: 200vh;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+  z-index: 1;
+  background-color: #468FAF;
+  color: white;
+  padding: 20px;
+  width: 100%;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer_contact {
+  margin-top: 10%;
+  margin-left: 3%;
+  font-size: 4rem;
+}
+#footer_title {
+  margin-top: 10%;
+  margin-left: 3%;
+  font-size: 3rem;
+}
+#footer_text {
+  margin-top: 5%;
+  margin-left: 3%;
+  font-size: 2rem;
+}
+#footer_copyright {
+  margin-left: 3%;
+  margin-top: 10%;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.footer_contact_info{
+  margin-top: 10%;
+  margin-left: 3%;
+  font-size: 2rem;
+}

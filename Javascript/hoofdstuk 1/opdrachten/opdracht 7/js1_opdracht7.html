@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js opdracht 7</title>
+</head>
+<body>
+    <script>
+        let lengte = window.prompt("Wat is de lengte: (cm)");
+        let breedte = window.prompt("Wat is de breedte: (cm)");
+        let hoogte = window.prompt("wat is de hoogte: (cm)");
+
+        let inhoud = (lengte * breedte * hoogte);
+
+        let rekensom = document.createElement('p');
+        rekensom.innerHTML = `De inhoud = ${inhoud}cm³`;
+        document.body.appendChild(rekensom);
+        // rekenen met window.prompt en de variabelen * elkaar doen en de uitkomst in een p element toevoegen aan de body.
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+*{
+    font-family: Verdana;
+    font-weight: bolder;
+}
+button {
+    padding: 14px 16px;
+    border-radius: 20px 20px;
+    background-color: black;
+    color: white;
+    transition: 1s;
+    box-shadow: 13px 18px 30px -4px rgba(0,0,0,0.85);
+}
+#uitslag {
+    margin-top: 50px;
+}
+button:hover {
+    transform: scale(1.1);
+}
