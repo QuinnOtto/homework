@@ -39,7 +39,18 @@ body {
   margin-top: 0.5%;
   margin-bottom: 0.5%;
 }
-.hover-bg {
+.hover_bg_nav {
+  position: absolute;
+  background-color: white;
+  height: 40px;
+  border-radius: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s ease;
+  z-index: 0;
+  pointer-events: none;
+}
+.hover_bg_footer {
   position: absolute;
   background-color: white;
   height: 40px;
@@ -94,6 +105,9 @@ body {
 }
 .grid {
   width: 50%;
+}
+.grid_60 {
+  width: 60%;
 }
 .center_project_list {
   color: white;
@@ -218,12 +232,6 @@ footer {
   margin-left: 3%;
   font-size: 2rem;
 }
-#footer_copyright {
-  margin-left: 3%;
-  margin-top: 25%;
-  font-weight: bolder;
-  font-size: 1.5rem;
-}
 #email, #phone, #github {
   display: inline;
   padding: 14px 16px;
@@ -231,4 +239,17 @@ footer {
   border-radius: 25px;
   margin-top: 10%;
   margin-left: 3%;
+}
+#footer_kom_in_contact {
+  margin-left: 3%;
+  font-size: 2rem;
+  color: white;
+  font-family: Verdana;
+  font-weight: bolder;
+}
+#footer_copyright {
+  margin-left: 3%;
+  margin-top: 10%;
+  font-weight: bolder;
+  font-size: 1.5rem;
 }

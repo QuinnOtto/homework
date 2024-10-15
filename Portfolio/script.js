@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const navBar = document.querySelector('.nav_bar_container');
     const hoverBg = document.createElement('div');
-    hoverBg.classList.add('hover-bg');
+    hoverBg.classList.add('hover_bg_nav');
     navBar.appendChild(hoverBg);
 
     const navLinks = document.querySelectorAll('.nav_bar_container a');
@@ -71,7 +71,29 @@ document.addEventListener("DOMContentLoaded", function() {
             hoverBg.style.left = `${centerX}px`;
         });
     });
+    const footerContact = document.querySelector('.footer_contact_list');
+    const hoverBgFooter = document.createElement('div');
+    hoverBgFooter.classList.add('hover_bg_footer');
+    footerContact.appendChild(hoverBgFooter);
 
+    const footerContactLinks = document.querySelectorAll('.footer_contact_list p');
+    footerContactLinks.forEach(link => {
+        link.addEventListener('mouseenter', (e) => {
+            const linkRect = link.getBoundingClientRect();
+            const footerRect = footerContact.getBoundingClientRect();
+            hoverBgFooter.style.width = `${linkRect.width}px`;
+            hoverBgFooter.style.left = `${linkRect.left - footerRect.left}px`;
+        });
+
+        link.addEventListener('mouseleave', (e) => {
+            const linkRect = link.getBoundingClientRect();
+            const footerRect = footerContact.getBoundingClientRect();
+            const centerX = linkRect.left + linkRect.width / 2 - footerRect.left;
+            hoverBgFooter.style.transition = 'width 0.6s ease, left 0.6s ease';
+            hoverBgFooter.style.width = '0px';
+            hoverBgFooter.style.left = `${centerX}px`;
+        });
+    });
     const projectListItems = document.querySelectorAll('.center_project_list ul li');
     projectListItems.forEach(item => {
         item.style.position = 'relative';
