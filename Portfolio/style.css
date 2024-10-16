@@ -193,12 +193,12 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  height: 100vh;
-  z-index: 1;
   background-color: #468FAF;
   color: white;
   padding: 20px;
   width: 100%;
+  position: relative; /* Changed from fixed */
+  z-index: 0; /* Ensure the footer is below the center_container */
 }
 
 .footer_container {
@@ -207,24 +207,29 @@ footer {
   justify-content: space-between;
   width: 100%;
 }
+
 .footer_contact {
   margin-top: 10%;
   margin-left: 3%;
 }
+
 #footer_title {
   margin-top: 10%;
   margin-left: 3%;
   font-size: 3rem;
 }
+
 #footer_text {
   margin-top: 5%;
   margin-left: 3%;
   font-size: 2rem;
 }
+
 .footer_contact_list {
   margin-top: 5%;
 }
-.footer_contact_list p{
+
+.footer_contact_list p {
   position: relative;
   display: inline;
   padding: 14px 16px;
@@ -234,10 +239,12 @@ footer {
   margin-left: 3%;
   transition: all 0.6s ease-in-out;
 }
+
 .footer_contact_list p:hover {
   color: black;
   background-color: white;
 }
+
 #footer_kom_in_contact {
   margin-left: 3%;
   font-size: 2rem;
@@ -245,6 +252,7 @@ footer {
   font-family: Verdana;
   font-weight: bolder;
 }
+
 #footer_copyright {
   margin-left: 3%;
   margin-top: 10%;
