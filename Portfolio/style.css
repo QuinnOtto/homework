@@ -189,20 +189,17 @@ footer {
   color: white;
   width: 100%;
   position: relative;
-  z-index: 0; 
+  z-index: 0;
 }
-
 .footer_container {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-
 .footer_contact {
   margin-top: 5%;
   margin-left: 3%;
 }
-
 #footer_title {
   margin-top: 5%;
   margin-left: 3%;
@@ -217,7 +214,6 @@ footer {
   border-radius: 25px;
   transition: 0.6s ease-in-out;
 }
-
 .footer_contact_list {
   display: flex;
   margin-left: 3%;
@@ -227,7 +223,6 @@ footer {
   transform: scale(1.1);
   cursor: pointer;
 }
-
 #footer_kom_in_contact {
   margin-left: 3%;
   font-size: 2rem;
@@ -242,15 +237,41 @@ footer {
   font-weight: bolder;
   font-size: 1.5rem;
 }
+.footer_input_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-.footer_input_form div {
-  padding: 14px 16px;
-  margin-top: 5%;
+#footer_input_name_email_div,
+#footer_input_subject_phone_div {
+  display: flex;
+  gap: 10px;
 }
-.footer_input_container {
-  margin-top: 6%;
-  margin-bottom: 0;
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
-.footer_input_container h1 {
-  font-size: 3rem;
+
+label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: white;
 }
+
+#footer_input_name_email_div input,
+#footer_input_subject_phone_div input,
+#footer_input_beschrijfing_div input {
+  padding: 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#footer_input_beschrijfing_div input {
+  width: 100%;
+}
+
