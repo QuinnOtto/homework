@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quinn Otto</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/img/logo-wit.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo-wit.png"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
         <header>
             <div class="header_container">
-                <img id="nav_bar_img" src="/img/logo-wit.png" alt="logo" href="#home">
+                <img id="nav_bar_img" src="./img/logo-wit.png" alt="logo" href="#home">
                 <nav class="nav_bar_container">
                     <a href="#project_1" class="scroll-to">Projects</a>
                     <a href="#portfolio">About</a>
@@ -64,20 +70,41 @@
         <div class="footer_container">
             <div class="footer_contact grid_60">
                 <h1 id="footer_title">Leuk je te ontmoeten, </br> Laten we in contact komen.</h1>
-                <p id="footer_text">Heb je een vraag of wil je gewoon hallo zeggen? Stuur me een berichtje!</p>
-                <p id="footer_kom_in_contact">Kom in contact</p>
+                <p id="footer_kom_in_contact">Vind mij op</p>
                 <div class="footer_contact_list">
-                    <p id="email" style="cursor: pointer;">Email</p>
-                    <p id="phone" style="cursor: pointer;">Phone</p>
-                    <p id="github" style="cursor: pointer;">Github</p>
+                    <img id="email" src="./img/social/logo_mail.png" alt="Email" style="cursor: pointer;">
+                    <img style="margin-left: 3%;" id="phone" src="./img/social/logo_phone.png" alt="Phone" style="cursor: pointer;">
+                    <img style="margin-left: 3%;" id="github" src="./img/social/logo_github.png" alt="Github" style="cursor: pointer;">
                 </div>
                 <p id="footer_copyright">&copy; 2024 Quinn Otto </p>
+            </div>
+            <div class="footer_input_container">
+                <form class="footer_input_form">
+                    <h1>Zeg Hallo</h1>
+                    <div class="footer_input_form">
+                        <div id="footer_input_name_div">
+                            <input type="text" id="footer_input_name" placeholder="Naam">
+                        </div>
+                        <div id="footer_input_email_div">
+                            <input type="email" id="footer_input_email" placeholder="Email">
+                        </div>
+                        <div id="footer_input_subject_div">
+                            <input type="text" id="footer_input_subject" placeholder="Onderwerp">
+                        </div>
+                        <div id="footer_input_phone_div">
+                            <input type="text" id="footer_input_phone" placeholder="bedrijf">
+                        </div>
+                        <div id="footer_input_beschrijfing_div">
+                            <input type="text" id="footer_input_beschrijfing" placeholder="beschrijving">
+                        </div>
+                    </div>
+                    <p class="footer_input_verstuur_knop">Verstuur</p>
+                </form>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.js"></script>
     <script src="script.js" defer></script>
-    
 </body>
 </html>
