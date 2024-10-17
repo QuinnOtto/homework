@@ -206,6 +206,7 @@ footer {
 #footer_title {
   margin-top: 5%;
   margin-left: 3%;
+  margin-bottom: 0;
   font-size: 3rem;
 }
 .footer_contact_list img {
@@ -235,10 +236,21 @@ footer {
   font-weight: bolder;
   margin-top: 35%;
 }
-
 #footer_copyright {
   margin-top: 6%;
   margin-left: 3%;
   font-weight: bolder;
   font-size: 1.5rem;
+}
+
+.footer_input_form div {
+  padding: 14px 16px;
+  margin-top: 5%;
+}
+.footer_input_container {
+  margin-top: 6%;
+  margin-bottom: 0;
+}
+.footer_input_container h1 {
+  font-size: 3rem;
 }
