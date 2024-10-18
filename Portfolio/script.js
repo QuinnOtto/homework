@@ -28,6 +28,13 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+    const scrollTop = document.querySelectorAll('.scroll_top');
+    scrollTop.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            lenis.scrollTo(0);
+        });
+    });
     const scrollToTopButton = document.querySelector('.scroll-to-top');
     if (scrollToTopButton) {
         scrollToTopButton.addEventListener('click', function(event) {
