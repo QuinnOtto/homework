@@ -155,38 +155,6 @@ body {
   color: white;
   font-family: 'Hind';
 }
-#project_2 {
-  display: flex;
-  justify-content: space-between;
-  background-color: #01497C;
-  color: rgb(0, 0, 0);
-  padding: 3%;
-  height: 200vh;
-}
-#project_3 {
-  display: flex;
-  justify-content: space-between;
-  background-color: #014F86;
-  color: rgb(0, 0, 0);
-  padding: 3%;
-  height: 200vh;
-}
-#project_4 {
-  display: flex;
-  justify-content: space-between;
-  background-color: #2A6F97;
-  color: rgb(0, 0, 0);
-  padding: 3%;
-  height: 200vh;
-}
-#project_5 {
-  display: flex;
-  justify-content: space-between;
-  background-color: #2C7DA0;
-  color: rgb(0, 0, 0);
-  padding: 3%;
-  height: 200vh;
-}
 footer {
   background-color: #468FAF;
   color: white;
@@ -262,7 +230,7 @@ label {
   margin-bottom: 5px;
   font-size: 1rem;
   color: white;
-}
+} 
 
 #footer_input_name_email_div input,
 #footer_input_subject_phone_div input,
@@ -270,8 +238,22 @@ label {
   padding: 14px;
   font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
   box-sizing: border-box;
+  background-color: #012a4a00;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-family: 'hind';
+  font-weight: lighter;
+  text-align: left;
+}
+
+#footer_input_name_email_div input:focus,
+#footer_input_subject_phone_div input:focus,
+#footer_input_beschrijfing_div input:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+  color: white;
 }
 
 #footer_input_beschrijfing_div input {
