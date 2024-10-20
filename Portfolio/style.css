@@ -208,6 +208,9 @@ footer {
   font-weight: bolder;
   font-size: 1.5rem;
 }
+.footer_input_container {
+  margin-top: 15%;
+}
 .footer_input_form {
   display: flex;
   flex-direction: column;
